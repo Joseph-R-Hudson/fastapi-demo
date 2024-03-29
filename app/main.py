@@ -15,6 +15,10 @@ app = FastAPI()
 # The URL for this API has a /docs endpoint that lets you see and test
 # your various endpoints/methods.
 
+DBHOST = os.environ.get('DBHOST')
+DBUSER = os.environ.get('DBUSER')
+DBPASS = os.environ.get('DBPASS')
+DB = "rck7ye"  # replace with your UVA computing ID / database name
 
 # The zone apex is the 'default' page for a URL
 # This will return a simple hello world via GET method.
